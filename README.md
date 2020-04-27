@@ -1,6 +1,8 @@
 # SnakeGame-Python
 Snake Game made in python using Pygame
 
+<img src="https://raw.githubusercontent.com/NoanFelipe/SnakeGame-Python/master/Screenshots/Capture.PNG" width="48" height="48">
+
 ![alt text](https://raw.githubusercontent.com/NoanFelipe/SnakeGame-Python/master/Screenshots/Capture.PNG){
   width: 50%;
   height: 50%
