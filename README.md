@@ -2,7 +2,7 @@
 Snake Game made in python using Pygame
 
 
-<img src="https://raw.githubusercontent.com/NoanFelipe/SnakeGame-Python/master/Screenshots/Capture.PNG" width="200" height="200">
+<img src="https://raw.githubusercontent.com/NoanFelipe/SnakeGame-Python/master/Screenshots/Capture.PNG" style="width='200' height='200'">
 
 <img src="https://raw.githubusercontent.com/NoanFelipe/SnakeGame-Python/master/Screenshots/Shop.PNG" width="200" height="200">
 
