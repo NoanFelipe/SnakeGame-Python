@@ -12,7 +12,7 @@ pip install pygame
 
 You can compile the game from the command line typing:
 ```
-python Snake2.0.py
+python3 Snake2.0.py
 ```
 
 
