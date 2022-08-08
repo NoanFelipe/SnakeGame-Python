@@ -2,12 +2,18 @@
 Snake Game made in python using Pygame.
 
 ## How to Run
-You can run this game from the command line typing:
+
+Of course, you should have python installed on your machine before typing this command.
+And make sure you also install the pygame library before compiling the game.
+This command should do the trick: 
+```
+pip install pygame
+```
+
+You can compile the game from the command line typing:
 ```
 python Snake2.0.py
 ```
-
-Of course, you should have python installed on your machine before typing this command.
 
 
 ## Screenshots
