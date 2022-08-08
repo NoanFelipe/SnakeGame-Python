@@ -7,8 +7,8 @@ pygame.init()
 pygame.display.set_caption('Snake')
 screen = pygame.display.set_mode((600, 600),0,32)
  
-font = pygame.font.SysFont('comicsans', 75)
-font1 = pygame.font.SysFont('comicsans', 25)
+font = pygame.font.SysFont('vera', 75)
+font1 = pygame.font.SysFont('vera', 25)
 
 snake_image_blue = pygame.image.load('blue.png')
 snake_image_blue = pygame.transform.scale(snake_image_blue, (100, 100))
@@ -105,7 +105,7 @@ def shop():
     equip_button = False
     while running:
         test_button = pygame.Rect(x, 484, 85, 40)
-        font2 = pygame.font.SysFont('comicsans', 35)
+        font2 = pygame.font.SysFont('vera', 35)
         screen.fill((0,0,0))
         draw_text('Press Esc to quit', font1, (255,255,255), screen, 425, 30)
         
@@ -321,8 +321,8 @@ def lose_screen(initial_gold):
     json_read = ReadJsonFile('player_info.json')
     player_info = []
     player_info.append(json_read)
-    font2 = pygame.font.SysFont('comicsans', 50)
-    font3 = pygame.font.SysFont('comicsans', 130)
+    font2 = pygame.font.SysFont('vera', 50)
+    font3 = pygame.font.SysFont('vera', 130)
     while run:
         screen.fill((0,0,0))
         for event in pygame.event.get():

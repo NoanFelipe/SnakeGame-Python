@@ -13,7 +13,7 @@ grid_width = 20
 grid_height = 20
 block_size = screen_width / grid_width
 clock = pygame.time.Clock()
-fruit_color = 0
+fruit_color = -1
 
 class Food:
     def __init__(self):
@@ -59,6 +59,7 @@ def draw_game_window(surface):
     player_info = []
     player_info.append(json_read)
     global fruit_color
+
     for k, v in enumerate(pixels_list):
         if pixels_list[k][2] == 1:
             if fruit_color == 0:
@@ -95,10 +96,12 @@ def draw_game_window(surface):
                 pygame.draw.rect(surface, (255, 255, 255), (Snake[k][0], Snake[k][1], block_size, block_size))
                 c = 0
             fruit_color = 1
-        
+    
+    draw_grid(surface)
+
     text = font.render(f'Size: {len(Snake)}', 1, (255, 255, 255))
     surface.blit(text, (400, 7))
-    draw_grid(surface)
+
     pygame.display.update()
 
 def create_grid():
@@ -192,8 +195,9 @@ def game_loop():
     global size
     global Snake
     global player_info
+    clock_speed = 9 # fps / snake velocity
     while run:
-        clock.tick(5)
+        clock.tick(clock_speed)
         
         json_read = ReadJsonFile('player_info.json')
 
@@ -339,7 +343,7 @@ Snake = [[300, 300]]
 food.change = True
 last_pos = []
 size = 1
-font = pygame.font.SysFont('comicsans', 30, True)
+font = pygame.font.SysFont('vera', 30, True)
 
 main_menu(game_loop)
 pygame.quit()
